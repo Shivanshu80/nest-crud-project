@@ -23,7 +23,7 @@ export class UserController {
 
     @Put(':id')
     updateUser(@Param('id') id: string, @Body() createUserDto: CreateUserDto) {
-        return this.userService.updateUserById(id, createUserDto)
+        return this.userService.updateUserById(id, createUserDto);
     }
 
     @Delete(':id')
